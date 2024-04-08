@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav bar inline</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+    
+        }
+        body{
+            background-image: url(img/240_F_104787586_63vz1PkylLEfSfZ08dqTnqJqlqdq0eXx.jpeg);
+            background-size: cover;
+        }
+        
+      ul{
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        background-color: rgb(0, 4, 4);
+        text-decoration: none;
+        overflow: hidden;
+        
+        
+       }
+       li{
+        float: left;
+        
+
+       }
+       li a{
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 15px 17px ;
+        border-right: 1px solid #bbb;
+
+
+       }
+       
+
+       li a:hover{
+        color: red;
+       }
+       .active{
+        background-color: rgb(190, 26, 78);
+       }
+  .dropdown{  
+    position: relative;
+    display: inline-block;
+   }
+   
+   .dropdown-content{ 
+         display: none; 
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+
+   }
+   .dropdown:hover .dropdown-content{
+    display: block;
+   }
+   .dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+   }
+ .dropdown-content a:hover{
+    background-color: #f1f1f1;
+ }
+ .dropdown:hover .dropdown-content{
+    display: block;
+ }
+ .dropdown:hover .dropbtn{
+    background-color: #3e8e41;
+ }
+ .box{
+    width: 200px;
+    float: right;
+    padding-top: 300px;
+    padding-left: 300px;
+    
+ }
+#search{
+    margin: 0 auto;
+    display: inline-block;
+    padding-right: 700px;
+    padding-top: 5px;
+    
+    
+}
+
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li class="active"><a href="headline.html">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li style="float: right;"><a href="#">About</a></li>
+
+    </ul>
+    <br>
+    <br>
+    <div class="dropdown">
+        <button class="dropbtn">buy me</button>
+        <div class="dropdown-content">
+            <a href="#">furniture</a>
+            <a href="#">chairs</a>
+            <a href="#">tables</a>
+        </div>
+        
+        <div class="box"> 
+            <input type="search" id="search" placeholder="search">
+        </div>
+
+
+    </div>
+    <footer>
+     
+
+    </footer>
+    
+
+</body>
+</html>

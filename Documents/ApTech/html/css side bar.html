@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>side bar</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: navy;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        li a{
+            display: block;
+            color: grey;
+            padding: 9px 17px;
+            text-decoration: none;
+        }
+        li a.active{
+            background-color:white;
+            color: blue;
+
+        }
+        li a:hover:not(.active){
+            background-color: blue;
+            color: white;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="" class="active">home</a></li>
+        <li><a href="">portfolio</a></li>
+        <li><a href="">Transactions</a></li>
+        <li><a href="">Buy coins</a></li>
+
+    </ul>
+    
+    <div style="margin-left: 25%; padding: 2px 17px; height: 100vh;">
+        <h1>Sidebar in Css</h1>
+        <h2>crypto wall</h2>
+    <h3>Scroll through to see the effect on the website</h3>
+    <p></p>
+    </div>
+    
+</body>
+</html>

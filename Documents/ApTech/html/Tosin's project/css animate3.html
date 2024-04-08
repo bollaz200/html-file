@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animate3</title>
+    <style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #333;
+    }
+   .central-circle{
+
+    width: 100px;
+    height: 100px;
+    background: #f00;
+    border-radius: 50%;
+    position: relative;
+    animation: glow 2s infinite;
+   }
+   .orbiting-circle{
+    width: 50px;
+    height: 50px;
+    background: #0f0;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px; U8I
+    animation: orbit 2s linear infinite;
+   }
+   .orbiting-circle:nth-child(2) {
+    animation-delay: 0.5s;
+   }
+
+   .orbiting-circle:nth-child(3) {
+    animation-delay: 1s;
+   }
+
+   .orbiting-circle:nth-child(4) {
+    animation-delay: 1.5s;
+   }
+   @keyframes orbit {
+    from {
+        transform: rotate(0deg) translateX(200px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translateX(200px) rotate(-360deg);
+    }
+
+
+   }
+
+   @keyframes glow{
+
+    0% {box-shadow: 
+        0 0 5px #f00,
+        0 0 10px #f00,
+        0 0 20px #f00;
+
+    }
+    50% {
+        box-shadow: 0 0 20px #f00,
+        0 0 30px #f00,
+        0 0 40px #f00,
+        0 0 50px #f00 ;
+    }
+    100% {
+        box-shadow: 0 0 20px #f00,
+        0 0 10px #f00,
+        0 0 15px #f00,
+        0 0 20px #f00 ;
+    }
+   }
+
+    </style>
+</head>
+<body>
+    <div class="central-circle">
+        <div class="orbiting-circle"></div>
+        <div class="orbiting-circle"></div>
+        <div class="orbiting-circle"></div>
+        <div class="orbiting-circle"></div>
+
+
+
+
+    </div>
+    
+</body>
+</html>
